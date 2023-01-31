@@ -25,6 +25,8 @@ return require('packer').startup(
         'davidgranstrom/nvim-markdown-preview',
         'kyazdani42/nvim-web-devicons',
         'folke/trouble.nvim',
+        'sindrets/diffview.nvim',
+        'f-person/git-blame.nvim',
         -- 'MunifTanjim/nui.nvim',
         -- 'VonHeikemen/fine-cmdline.nvim',
         -- 'kylechui/nvim-surround',
