@@ -22,7 +22,10 @@ return require('packer').startup(
         'dcampos/nvim-snippy',
         'dcampos/cmp-snippy',
         'gpanders/editorconfig.nvim',
-        'davidgranstrom/nvim-markdown-preview',
+        {
+          "iamcco/markdown-preview.nvim",
+          run = function() vim.fn["mkdp#util#install"]() end,
+        },
         'kyazdani42/nvim-web-devicons',
         'folke/trouble.nvim',
         'sindrets/diffview.nvim',
