@@ -7,12 +7,12 @@ telescope.setup({
   },
   pickers = {
     find_files = { hidden = true }
-  }
+  },
 })
--- Keybinds
-vim.cmd([[
-  nnoremap <C-p> <cmd>lua require('telescope.builtin').find_files()<cr>
-  nnoremap <C-l> <cmd>lua require('telescope.builtin').live_grep()<cr>
-  nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
-  nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
-]])
+
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<C-p>', builtin.find_files, {})
+vim.keymap.set('n', '<C-l>', builtin.live_grep, {})
+vim.keymap.set('n', '<C-g>', builtin.lsp_definitions, {})
+vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
