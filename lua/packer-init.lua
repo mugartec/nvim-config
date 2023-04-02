@@ -31,6 +31,7 @@ return require('packer').startup(
         'sindrets/diffview.nvim',
         'f-person/git-blame.nvim',
         'nvim-tree/nvim-tree.lua',
+        'startup-nvim/startup.nvim',
         -- 'MunifTanjim/nui.nvim',
         -- 'VonHeikemen/fine-cmdline.nvim',
         -- 'kylechui/nvim-surround',
